@@ -1,20 +1,22 @@
 {
-	"scripts": {
+  "scripts": {
     "build": "slidev build ./slides/index.md --base /mita.ts-1/",
+    "export": "slidev export ./slides/index.md --output slide.pdf",
     "dev": "slidev ./slides/index.md --open",
-		"generate:docker": "make generate",
-		"generate:npm": "openapi-generator-cli generate -i ./spec.yml -g typescript-axios -o ./sample/openapi-generator-cli",
-		"openapi-typescript": "openapi-typescript ./spec.yml -o ./sample/openapi-typescript/schema.d.ts"
-	},
-	"dependencies": {
+    "generate:docker": "make generate",
+    "generate:npm": "openapi-generator-cli generate -i ./spec.yml -g typescript-axios -o ./sample/openapi-generator-cli",
+    "openapi-typescript": "openapi-typescript ./spec.yml -o ./sample/openapi-typescript/schema.d.ts"
+  },
+  "dependencies": {
     "@slidev/cli": "^0.49.28",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
     "vue": "^3.4.38"
   },
-	"devDependencies": {
+  "devDependencies": {
     "@openapitools/openapi-generator-cli": "^2.13.5",
-		"openapi-typescript": "^7.3.0",
+    "openapi-typescript": "^7.3.0",
+    "playwright-chromium": "^1.46.1",
     "typescript": "^5.5.4"
-	}
+  }
 }
