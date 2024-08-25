@@ -1,5 +1,12 @@
 {
+  "scripts": {
+    "generate:typescript-axios": "make generate",
+    "generate:openapi-typescript": "openapi-typescript ./spec.yml -o ./sample/openapi-typescript/schema.d.ts"
+  },
 	"dependencies": {
 		"typescript": "^5.5.4"
+	},
+	"devDependencies": {
+		"openapi-typescript": "^7.3.0"
 	}
 }
