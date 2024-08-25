@@ -1,6 +1,6 @@
 {
 	"scripts": {
-    "build": "slidev build ./slides/index.md",
+    "build": "slidev build ./slides/index.md --base /mita.ts-1/",
     "dev": "slidev ./slides/index.md --open",
 		"generate:docker": "make generate",
 		"generate:npm": "openapi-generator-cli generate -i ./spec.yml -g typescript-axios -o ./sample/openapi-generator-cli",
