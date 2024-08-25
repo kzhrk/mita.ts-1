@@ -1,12 +1,14 @@
 {
-  "scripts": {
-    "generate:typescript-axios": "make generate",
-    "generate:openapi-typescript": "openapi-typescript ./spec.yml -o ./sample/openapi-typescript/schema.d.ts"
-  },
+	"scripts": {
+		"generate:docker": "make generate",
+		"generate:npm": "openapi-generator-cli generate -i ./spec.yml -g typescript-axios -o ./sample/openapi-generator-cli",
+		"openapi-typescript": "openapi-typescript ./spec.yml -o ./sample/openapi-typescript/schema.d.ts"
+	},
 	"dependencies": {
 		"typescript": "^5.5.4"
 	},
 	"devDependencies": {
+		"@openapitools/openapi-generator-cli": "^2.13.5",
 		"openapi-typescript": "^7.3.0"
 	}
 }
