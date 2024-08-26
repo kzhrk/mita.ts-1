@@ -4,7 +4,7 @@
     "export": "slidev export ./slides/index.md --output slide.pdf",
     "dev": "slidev ./slides/index.md --open",
     "generate:docker": "make generate",
-    "generate:npm": "openapi-generator-cli generate -i ./spec.yml -g typescript-axios -o ./sample/openapi-generator-cli",
+    "generate:npm": "openapi-generator-cli generate -i ./spec.yml -g typescript-axios -o ./sample/openapi-generator",
     "openapi-typescript": "openapi-typescript ./spec.yml -o ./sample/openapi-typescript/schema.d.ts"
   },
   "dependencies": {

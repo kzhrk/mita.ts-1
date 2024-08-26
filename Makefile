@@ -3,4 +3,4 @@ generate:
   -v ${CURDIR}:/local openapitools/openapi-generator-cli generate \
   -i local/spec.yml \
   -g typescript-axios \
-  -o local/sample/typescript-axios
+  -o local/sample/openapi-generator
