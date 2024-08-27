@@ -27,49 +27,6 @@ mdc: true
 
 ---
 
-# 自己紹介
-
-<div class="container">
-  <div class="profile">
-
-  ```json
-  {
-    "name": "小林 和弘",
-    "job": "Frontend Engineer@Medpeer",
-    "x_twitter": "@kzhrk0430",
-    "github": "kzhrk"
-  }
-  ```
-
-  </div>
-  <figure class="photo">
-    <img src="https://ca.slack-edge.com/T01D3LCRA8L-U01M90SPEAH-g09a52a5db19-512" />
-  </figure>
-</div>
-
-<style>
-.container {
-  display: flex;
-}
-.profile {
-  align-items: center;
-  flex: 1 1 70%;
-}
-.profile pre {
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-.profile code {
-  font-size: 1.2rem;
-}
-.photo {
-  flex: 0 0 30%;
-}
-</style>
-
----
-
 # OpenAPI とは
 
 https://www.openapis.org/
@@ -79,8 +36,8 @@ https://www.openapis.org/
   <ul class="text-xl">
     <li>API がどのように機能するか</li>
     <li>API がどのように連携するか</li>
-    <li class="font-bold">クライアントコードを生成<strong v-click class="text-red">（型も生成）</strong></li>
     <li>テストを作成</li>
+    <li class="font-bold">クライアントコードを生成<strong v-click class="text-red">（型も生成）</strong></li>
   </ul>
 </div>
 
@@ -295,6 +252,49 @@ const item2: Item2 = {
 
 - paths, operations の巨大な interface を提供する
 - [openapi-fetch](https://openapi-ts.dev/openapi-fetch/) でテストのモックなども提供する
+
+---
+
+# （時間が余ったら）自己紹介
+
+<div class="container">
+  <div class="profile">
+
+  ```json
+  {
+    "name": "小林 和弘",
+    "job": "Frontend Engineer@Medpeer",
+    "x_twitter": "@kzhrk0430",
+    "github": "kzhrk"
+  }
+  ```
+
+  </div>
+  <figure class="photo">
+    <img src="https://ca.slack-edge.com/T01D3LCRA8L-U01M90SPEAH-g09a52a5db19-512" />
+  </figure>
+</div>
+
+<style>
+.container {
+  display: flex;
+}
+.profile {
+  align-items: center;
+  flex: 1 1 70%;
+}
+.profile pre {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.profile code {
+  font-size: 1.2rem;
+}
+.photo {
+  flex: 0 0 30%;
+}
+</style>
 
 ---
 layout: center
